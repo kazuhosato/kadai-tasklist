@@ -9,10 +9,10 @@
 
         {!! Form::label('status', 'Title:') !!}
         {!! Form::text('status') !!}
-
+        <br><br>
         {!! Form::label('content', 'Detail:') !!}
         {!! Form::text('content') !!}
-
+         <br><br>
         {!! Form::submit('Register') !!}
 
     {!! Form::close() !!}
