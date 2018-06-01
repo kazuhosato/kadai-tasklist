@@ -2,18 +2,18 @@
 
 @section('content')
 
-    <h1>メッセージ新規作成ページ</h1>
+    <h1>Task Register</h1>
 
 
     {!! Form::model($task, ['route' => 'tasks.store']) !!}
 
-        {!! Form::label('status', 'タイトル:') !!}
+        {!! Form::label('status', 'Title:') !!}
         {!! Form::text('status') !!}
 
-        {!! Form::label('content', 'メッセージ:') !!}
+        {!! Form::label('content', 'Detail:') !!}
         {!! Form::text('content') !!}
 
-        {!! Form::submit('投稿') !!}
+        {!! Form::submit('Register') !!}
 
     {!! Form::close() !!}
 

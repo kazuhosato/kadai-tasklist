@@ -2,17 +2,17 @@
 
 @section('content')
 
-    <h1>id: {{ $task->id }} のメッセージ編集ページ</h1>
+    <h1>{{ $task->id }}Edit Page </h1>
 
     {!! Form::model($task, ['route' => ['tasks.update', $task->id], 'method' => 'put']) !!}
 
-        {!! Form::label('status', 'タイトル:') !!}
+        {!! Form::label('status', 'Title:') !!}
         {!! Form::text('status') !!}
 
-        {!! Form::label('content', 'メッセージ:') !!}
+        {!! Form::label('content', 'Detail:') !!}
         {!! Form::text('content') !!}
 
-        {!! Form::submit('更新') !!}
+        {!! Form::submit('Change') !!}
 
     {!! Form::close() !!}
 
