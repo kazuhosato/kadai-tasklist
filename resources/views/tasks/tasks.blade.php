@@ -13,7 +13,7 @@
                 <p>{!! nl2br(e($task->status)) !!}</p>
                  <p>{!! nl2br(e($task->content)) !!}</p>
             </div>
-            <div>
+            <div class = btn-toolbar>
                 @if (Auth::user()->id == $task->user_id)
                     {!! Form::open(['route' => ['tasks.destroy', $task->id], 'method' => 'delete']) !!}
                         {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}
